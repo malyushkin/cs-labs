@@ -17,8 +17,8 @@ def info(func):
 
 @info
 def stack(brackets):
-    stack_chars = []
-    stack_idx = []
+    stack_chars = list()
+    stack_idx = list()
 
     for idx, c in enumerate(brackets, start=1):
         if c in '([{':
@@ -40,7 +40,7 @@ def stack(brackets):
     if stack_chars:
         print(stack_idx)
         return stack_idx.pop()
-        
+
     return 'Success'
 
 
