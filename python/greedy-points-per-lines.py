@@ -27,9 +27,9 @@ def find_min_points_set(lines):
 
 
 def main():
-    n = int(input())
-    lines = [list(map(int, input().split(' '))) for i in range(n)]
-    # lines = [[4, 7], [1, 3], [2, 5], [5, 6]]
+    # n = int(input())
+    # lines = [list(map(int, input().split(' '))) for i in range(n)]
+    lines = [[4, 7], [1, 3], [2, 5], [5, 6]]
     find_min_points_set(lines=lines)
 
 
