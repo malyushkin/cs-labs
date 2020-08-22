@@ -1,6 +1,5 @@
 # coding=utf-8
 
-
 # check the correction of the brakets collection
 # full task description: https://stepik.org/media/attachments/lesson/41233/statements.pdf
 
