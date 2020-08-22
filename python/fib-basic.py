@@ -17,15 +17,17 @@ def memoize(func):
     return wrapper
 
 
+# O(n)
 @memoize
-def fib_recursive(n):
+def fib_recursive(n): 
     if n <= 1:
         return n
     return fib_recursive(n-1) + fib_recursive(n-2)
 
 
+# O(n)
 @memoize
-def fib_arr(n):
+def fib_arr(n): 
     f0, f1 = 0, 1
     for i in range(1, n):
         f0, f1 = f1, f0 + f1
@@ -33,8 +35,9 @@ def fib_arr(n):
 
 
 def main():
-    fib_recursive(15)
-    fib_arr(20)
+    fib_recursive(8)  # 21
+    fib_recursive(15)  # 610
+    fib_arr(20)  # 6765
 
 
 if __name__ == '__main__':
